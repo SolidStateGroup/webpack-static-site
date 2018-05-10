@@ -1,8 +1,6 @@
 # Static
 
-A minimal setup for writing cross platform applications in React and React Native. 
-This project is the example for our blog post A sensible approach to Cross platform development with React and React Native (Link coming soon).
-
+A minimal setup for writing a static site, includes cache busting, minification, es6 Support and Sass with Webpack.
 
 ``npm i``
 
@@ -19,15 +17,8 @@ You'll need nodemon to run in development mode
 
 ```npm start```
 
-This will deploy files to /build and splits your web code into 3 cache busted bundles
+This will bundle and deploy files to /build which can be run with pretty much any server setup.
 
 **/webpack**
 
 Webpack configs are used in our package.json scripts to either bundle our app for development or deploy minified/cachebusted files to **/build** to be used in production.
-
-## Syncing common code between web and mobile
-
-running **/mobile/bin/common-watch.sh** will keep **/common** synced to **/mobile/common-mobile**. 
-This is automatically executed when running the ios project.
-
-<img src="http://g.recordit.co/j6A8lIxu6s.gif"/>
